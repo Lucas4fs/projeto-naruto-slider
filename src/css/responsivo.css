@@ -32,12 +32,6 @@
     font-size: 13px; /*TAMANHO DA FONTE*/
   }
 
-  .cartao .imagem-naruto,
-  .imagem-hinata,
-  .imagem-boruto {
-    max-height: 230px; /*ALTURA MÁXIMA*/
-  }
-
   .cartao .informacoes .nome {
     max-width: 50%; /*LARGURA MÁXIMA*/
     font-size: 18px; /*TAMANHO DA FONTE*/
