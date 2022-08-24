@@ -1,0 +1,9 @@
+* {/*SELECIONA TUDO*/
+  margin: 0; /*MARGEM*/
+  padding: 0; /*PREENCHIMENTO*/
+  box-sizing: border-box; /*FAZ COM QUE MUDANÇAS RELACIONADAS AO TAMANHO NÃO INTERFIRAM NO PREENCHIMENTO*/
+}
+
+ul {
+  list-style: none;/*ESTILO DE LISTA:NENHUM*/
+}

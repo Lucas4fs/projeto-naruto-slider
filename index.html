@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Naruto Cards - MapaDevWeek</title>
+
+    <link rel="shortcut icon" href="imagens/churiken1.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/estilo.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="src/imagens/churiken1.png" alt="churiken" class="churiken">
+        <h1 class="titulo">
+            Naruto Cards
+        </h1>
+    </header>
+
+    <main class="naruto-slider">
+        <a class="btn-seta btn-voltar margem" id="btn-voltar">
+            <img src="src/imagens/kunaiesquerda.png" alt="setavoltar" class="tamanhodaseta1">
+        </a>
+
+        <ul class="lista-naruto">
+            <li class="cartao selecionado fundo-1" id="primeirocard" img="src">
+                <div class="informacoes">
+                    <h2 class="nome">Naruto</h2>
+                    <p class="vida">HP 900</p>
+                </div>
+
+                <div class="container-imagem">
+                    <img src="src/imagens/narutocorrendoPNG.png" alt="Naruto" class="tamanhodopersonagemnaruto imagem-naruto">
+                </div>
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Este é Naruto Uzumaki, carrega 
+                    consigo a "Raposa de Nove Caudas" que consegue 
+                    dar forças ao ninja até mesmo na beira da morte,
+                    aumentando seu HP em até 9x mais que o normal </p>
+                </div>
+            </li>
+
+            <li class="cartao fundo-2"> 
+                <div class="informacoes">
+                    <h2 class="nome">Hinata</h2>
+                    <p class="vida">HP 800</p>
+                </div>
+
+                <div class="container-imagem">
+                    <img src="src/imagens/hinatahyuga.png" alt="Hinata" class="tamanhodopersonagemhinata imagem-hinata">
+                </div>
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Está é Hinata, portadora
+                    do Byakugan, com uma visão de 360° é possível
+                    prever ataques, sendo capaz de anular até 
+                    8000HP lançados pelo oponente</p>
+                </div>
+            </li>
+
+            <li class="cartao fundo-3">
+                <div class="informacoes">
+                    <h2 class="nome">Boruto</h2>
+                    <p class="vida">HP 500</p>
+                </div>
+
+                <div class="container-imagem">
+                    <img src="src/imagens/borutomaopintada.png" alt="Boruto" class="tamanhodopersonagemboruto imagem-boruto">
+                </div>
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Este é Boruto, resultado da fusão
+                    entre os sangues Hyuuga e Uzumaki, possui um doujutsu
+                    mais conhecido como "olho puro" sendo capaz de
+                    enxergar o HP de todos seus oponentes</p>
+                </div>
+            </li>
+        </ul>
+
+        <a class="btn-seta btn-avancar" id="btn-avancar">
+            <img src="src/imagens/kunaidireita.png" alt="setaavancar" class="tamanhodaseta2">
+        </a>
+    </main>
+
+    <script src="src/js/index.js"></script>
+ </body>
+</html>

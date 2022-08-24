@@ -1,0 +1,174 @@
+body {
+  font-family: "Outfit", sans-serif; /*FONTE*/
+  background-image: url(../imagens/fundoceuazul5.jpg); /*IMAGEM DE FUNDO*/
+  background-repeat: none; /*FUNDO NÃO SE REPETE*/
+  background-size: cover; /*COBRIR TODO O PLANO DE FUNDO*/
+  min-height: 100vh; /*ALTURA MÍNIMA */
+}
+
+.cabecalho {
+  display: flex; /*COLOCA OS ELEMENTOS UM DO LADO DO OUTRO*/
+  justify-content: center; /*JUSTIFICAR CONTEÚDO*/
+  align-items: center; /*ALINHAR ITENS NO CENTRO*/
+  gap: 15px; /*ESPAÇO*/
+  padding-top: 30px; /*PREENCHIMENTO COM 50PX DE DISTÂNCIA DO TOPO*/
+}
+
+.cabecalho .titulo {
+  color: rgb(0, 0, 0); /*COR*/
+}
+
+.cabecalho .churiken {
+  width: 30px; /*LARGURA*/
+  height: 30px; /*ALTURA*/
+}
+
+.naruto-slider {
+  display: flex; /*COLOCA OS ELEMENTOS UM DO LADO DO OUTRO*/
+  align-items: center; /*ALINHAR ITENS NO CENTRO*/
+  justify-content: center; /*JUSTIFICAR CONTEÚDO NO CENTRO*/
+  gap: 80px; /*ESPAÇO*/
+  margin: 40px 0px; /*MARGEM*/
+}
+
+.lista-naruto {
+  width: 310px; /*LARGURA*/
+  height: 490px; /*ALTURA*/
+  position: relative; /*POSIÇÃO RELATIVA*/
+  margin-bottom: 80px; /*MARGEM DO DO FUNDO*/
+  justify-items: center; /*JUSTIFICAR ITENS NO CENTRO*/
+  justify-content: center; /*JUSTIFICAR CONTEÚDO NO CENTRO*/
+}
+
+.naruto-slider .btn-seta {
+  position: relative; /*POSIÇÃO RELATIVA*/
+  margin-bottom: 90px; /*MARGEM DO FUNDO*/
+  width: 130px; /*LARGURA*/
+  height: 130px; /*ALTURA*/
+  border-radius: 100px; /*RAIO DE BORDA*/
+  cursor: pointer; /*CURSOR COM PONTEIRO APARECE AO PASSAR O MOUSE*/
+  transition: background-color 0.4s ease-in-out; /*FAZER A TRANSIÇÃO DA COR DE FUNDO COM 0.2s E ANIMAÇÃO ease-in-out*/
+}
+
+.btn-seta:hover {
+  background-image: radial-gradient(circle, #15afec, #1bbefd, #cceefe, #fdfefe);/*DEGRADÊ CIRCULAR*/
+  position: relative; /*POSIÇÃO RELATIVA*/
+}
+
+.tamanhodaseta1 {
+  margin-top: -7px; /*MARGEM DE DISTÂNCIA DO TOPO*/
+  margin-right: -7px; /*MARGEM DE DISTÂNCIA DA DIREITA*/
+  width: 130px; /*LARGURA*/
+  height: 150px; /*ALTURA*/
+  position: absolute; /*POSIÇÃO ABSOLUTA*/
+}
+
+.tamanhodaseta2 {
+  margin-top: -7px; /*MARGEM DE DISTÂNCIA DO TOPO*/
+  margin-left: 5px; /*MARGEM DE DISTÂNCIA DA ESQUERDA*/
+  width: 130px; /*LARGURA*/
+  height: 150px; /*ALTURA*/
+  position: absolute; /*POSIÇÃO ABSOLUTA*/
+}
+
+.cartao {
+  opacity: 0; /*OPACIDADE 0 É NECESSÁRIO PARA CAUSAR UM EFEITO MAIS SUAVE NA TRANSIÇÃO DE UM CARD PARA O OUTRO*/
+  height: 100%; /*OCUPAR 100% DA ALTURA*/
+  width: 100%; /*OCUPAR 100% DA LARGURA*/
+  display: flex; /*FAZ COM QUE OS ELEMENTOS TENHAM UMA EXIBIÇÃO FLEXIONADA*/
+  flex-direction: column; /*DIREÇÃO DO FLEXIONAMENTO EM COLUNA*/
+  justify-content: space-between; /*JUSTIFICAR O ESPAÇO ENTRE O CONTEÚDO*/
+  position: absolute; /*POSIÇÃO ABSOLUTA*/
+  padding: 12px; /*PREENCHIMENTO RECEBE 12px DE DISTÂNCIA DA BORDA*/
+  border-radius: 10px; /*RAIO DE BORDA*/
+  box-shadow: rgb(0, 0, 0) 0px 5px 20px 0px; /*SOMBRA DA CAIXA*/
+  transition: opacity 0.4s ease-in-out; /*TRANSIÇÃO DA OPACIDADE*/
+}
+
+.cartao.selecionado {
+  opacity: 1; /*OPACIDADE*/
+  z-index: 1; /*ÍNDICE Z, POSIÇÃO DO ELEMENTO*/
+}
+
+.fundo-1 {
+  background: url(../imagens/fundonarutocomraposadesfocado.jpg) no-repeat;
+  /*FUNDO: CAMINHO DO FUNDO() NÃO SE REPETE*/
+}
+
+.fundo-2 {
+  background: url(../imagens/fundonejimodf.jpg) no-repeat;
+  /*FUNDO: CAMINHO DO FUNDO() NÃO SE REPETE*/
+}
+
+.fundo-3 {
+  background: url(../imagens/fundoborutocomdesfoque.jpg) no-repeat;
+  /*FUNDO: CAMINHO DO FUNDO() NÃO SE REPETE*/
+}
+
+.cartao .informacoes {
+  background-color: #ffffff66; /*COR DE FUNDO*/
+  display: flex; /*ALINHA UM ELEMENTO DO LADO DO OUTRO*/
+  align-items: center; /*ALINHAR ITENS NO CENTRO*/
+  justify-content: space-between; /*JUSTIFICAR O CONTEÚDO, ESPAÇO ENTRE*/
+  padding: 7px 10px; /*PREENCHIMENTO*/
+  border-radius: 10px; /*RAIO DE BORDA*/
+}
+
+.cartao .informacoes .nome {
+  color: rgb(0, 0, 0); /*COR*/
+  font-size: 24px; /*TAMANHO DA FONTE*/
+}
+
+.cartao .informacoes .vida {
+  background-color: #333; /*COR DE FUNDO*/
+  color: #fff2ec; /*COR*/
+  padding: 6px 10px; /*PREENCHIMENTO*/
+  border-radius: 20px; /*RAIO DE BORDA*/
+}
+
+.cartao .container-imagem {
+  text-align: center; /*ALINHAMENTO DE TEXTO NO CENTRO*/
+}
+
+.cartao .descricao {
+  background-color: #ffffff66; /*COR DE FUNDO*/
+  border-radius: 10px; /*RAIO DE BORDA*/
+  height: 35%; /*ALTURA*/
+}
+
+.cartao .descricao .titulo {
+  background-color: #333; /*COR DE FUNDO*/
+  color: #f1ecff; /*COR*/
+  font-size: 15px; /*TAMANHO DA FONTE*/
+  padding: 10px; /*PREENCHIMENTO*/
+  border-radius: 10px; /*RAIO DE BORDA*/
+  border-bottom-left-radius: 0px; /*RAIO DE BORDA EMBAIXO NA ESQUERDA*/
+  border-bottom-right-radius: 0px; /*RAIO DE BORDA EMBAIXO NA DIREITA*/
+}
+
+.cartao .descricao .texto {
+  font-size: 14px; /*TAMANHO DA FONTE*/
+  padding: 9px; /*PREENCHIMENTO*/
+  text-align: justify; /*ALINHAMENTO DE TEXTO JUSTIFICADO*/
+}
+
+.tamanhodopersonagemnaruto {
+  width: 300px; /*LARGURA*/
+  height: 240px; /*ALTURA*/
+  transform: translate(-50%, -50%); /*TRANSFORMAR TRANSLADO/AUXILIA NA CENTRALIZAÇÃO*/
+  position: absolute; /*POSIÇÃO ABSOLUTA*/
+}
+
+.tamanhodopersonagemhinata {
+  width: 150px; /*LARGURA*/
+  height: 240px; /*ALTURA*/
+  transform: translate(-50%, -50%); /*TRANSFORMAR TRANSLADO/AUXILIA NA CENTRALIZAÇÃO*/
+  position: absolute; /*POSIÇÃO ABSOLUTA*/
+}
+
+.tamanhodopersonagemboruto {
+  width: 280px; /*LARGURA*/
+  height: 240px; /*ALTURA*/
+  transform: translate(-50%, -50%); /*TRANSFORMAR TRANSLADO/AUXILIA NA CENTRALIZAÇÃO*/
+  position: absolute; /*POSIÇÃO ABSOLUTA*/
+}

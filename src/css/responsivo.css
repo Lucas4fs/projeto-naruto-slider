@@ -1,0 +1,115 @@
+@media (max-width: 620px) {/*QUANDO O SITE ATINGIR 620PX DE LARGURA*/
+  .naruto-slider {
+    padding: 0px 0px; /*PREENCHIMENTO*/
+    gap: 10px; /*ESPAÇO*/
+  }
+
+  .btn-seta {
+    width: 80px; /*LARGURA*/
+    height: 80px; /*ALTURA*/
+    padding: 20px; /*PREENCHIMENTO*/
+    display: flex; /*ALINHA OS ITENS UM DO LADO DO OUTRO*/
+    justify-content: center; /*JUSTIFIQUE CONTEÚDO NO CENTRO*/
+    align-items: center; /*ALINHAR ITENS NO CENTRO*/
+    margin-top: -40px; /*MARGEM DO TOPO*/
+  }
+
+  .lista-naruto {
+    height: 500px; /*ALTURA*/
+  }
+
+  .cartao {
+    height: 490px; /*ALTURA*/
+    width: 100%; /*LARGURA*/
+  }
+
+  .cartao .descricao {
+    height: 170px; /*ALTURA*/
+    margin-bottom: 5px; /*MARGEM INFERIOR*/
+  }
+
+  .cartao .descricao .texto {
+    font-size: 13px; /*TAMANHO DA FONTE*/
+  }
+
+  .cartao .imagem-naruto,
+  .imagem-hinata,
+  .imagem-boruto {
+    max-height: 230px; /*ALTURA MÁXIMA*/
+  }
+
+  .cartao .informacoes .nome {
+    max-width: 50%; /*LARGURA MÁXIMA*/
+    font-size: 18px; /*TAMANHO DA FONTE*/
+  }
+
+  .cartao .informacoes .vida {
+    font-size: 14px; /*TAMANHO DA FONTE*/
+  }
+
+  .tamanhodaseta1 {
+    margin-top: 1px; /*MARGEM DE DISTÂNCIA DO TOPO*/
+    margin-right: 10px; /*MARGEM DE DISTÂNCIA DA DIREITA*/
+    width: 100px; /*LARGURA*/
+    height: 100px; /*ALTURA*/
+    position: absolute; /*POSIÇÃO ABSOLUTA*/
+  }
+
+  .tamanhodaseta2 {
+    margin-top: 1px; /*MARGEM DE DISTÂNCIA DO TOPO*/
+    margin-left: 10px; /*MARGEM DE DISTÂNCIA DA DIREITA*/
+    width: 100px; /*LARGURA*/
+    height: 100px; /*ALTURA*/
+    position: absolute; /*POSIÇÃO ABSOLUTA*/
+  } 
+
+  .cartao .imagem-naruto,
+  .imagem-hinata,
+  .imagem-boruto {
+    height: 100%; /*ALTURA*/
+    max-height: 250px; /*ALTURA MÁXIMA*/
+  }
+
+  .cartao {
+    height: 600px; /*ALTURA*/
+    width: 100%; /*LARGURA*/
+  }
+
+  .cartao .informacoes { 
+    gap: 10px /*ESPAÇO*/
+  }
+  
+  .cartao .descricao {
+    height: 230px /*ALTURA*/
+  }
+
+  @media (max-width: 420px) { /*QUANDO O SITE ATINGIR 420PX DE LARGURA*/
+    body {  
+      min-height: 110vh; /*ALTURA MÍNIMA*/
+    }
+
+    .tamanhodopersonagemnaruto,
+    .tamanhodopersonagemhinata,
+    .tamanhodopersonagemboruto {
+      max-width: 230px; /*LARGURA MÁXIMA*/
+    }
+  }
+
+  @media (max-width: 380px) { /*QUANDO O SITE ATINGIR 380PX DE LARGURA*/
+    body {  
+      min-height: 115vh; /*ALTURA MÍNIMA*/
+    }
+
+    .tamanhodopersonagemboruto { 
+      max-width: 200px; /*LARGURA MÁXIMA*/
+    }
+  }
+
+  @media (max-width: 340px) { /*QUANDO O SITE ATINGIR 340PX DE LARGURA*/
+    .tamanhodopersonagemnaruto,
+    .tamanhodopersonagemhinata,
+    .tamanhodopersonagemboruto {
+      max-width: 190px; /*LARGURA MÁXIMA*/
+    }   
+  }
+}
