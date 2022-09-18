@@ -39,7 +39,7 @@ https://lucas4fs.github.io/projeto-naruto-slider/
     linguagem de estilização, possibilitando a verdadeira prática de modificação de imagem, ou seja, ao invés de pegar um card pronto preferimos
     usar linhas de códigos fazendo a união de imagens, escritas e parâmetros para a criação do card, o print abaixo retrara a separação de cada item.
 
-<br><img src="src\imagensreadmemd\separacaodeitensdocard.png"><td>&nbsp;&nbsp;&nbsp;<img src="src\imagensreadmemd\li.png"><td><img src="src\imagensreadmemd\fundonarutocomraposadesfocado2.jpg">
+<br><img src="src\imagensreadmemd\separacaodeitensdocard.png"><td>&nbsp;&nbsp;<img src="src\imagensreadmemd\li.png"><td><img src="src\imagensreadmemd\fundonarutocomraposadesfocado2.jpg"><td>><img src="src\imagensreadmemd\narutocorrendoPNG23.jpg">
 </p>
 
 <p>
